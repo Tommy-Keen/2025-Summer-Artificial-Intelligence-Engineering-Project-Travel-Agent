@@ -1,0 +1,7 @@
+streamlit
+openai
+icalendar
+requests
+langchain
+langchain_openai
+langchain-community
