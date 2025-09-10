@@ -110,9 +110,7 @@ if agent_executor:
             with st.spinner("AI Agent 正在思考和规划中，这可能需要一些时间..."):
                 try:
                     
-                    itinerary_text = get_langchain_plan(agent_executor, destination, num_days, interests)
-                    st.session_state.itinerary = itinerary_text
-                    
+                    itinerary_text = get_langchain_plan(agent_executor, destination, num_days)                    
                     # 添加成功提示
                     st.success("行程生成成功！")
                     
@@ -170,4 +168,5 @@ else:
 
 # 添加页脚
 st.divider()
+
 st.caption("GGGroup 2025短学期项目 - AI 旅行计划器")
